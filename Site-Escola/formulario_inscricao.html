@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Inscrição</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1>Formulário de Inscrição</h1>
+        <p>Preencha o formulário abaixo para se inscrever no curso.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container">
+        <div class="card">
+          <form
+            id="form-inscricao"
+            action="https://660f17dc356b87a55c50cf30.mockapi.io/cursos/students"
+            method="POST"
+          >
+            <h3 class="form-subtitle">Dados do Aluno</h3>
+            <div class="form-group">
+              <input
+                type="text"
+                name="nome_aluno"
+                placeholder="Nome Completo*"
+                required
+              />
+              <input type="text" name="endereco_aluno" placeholder="Endereço" />
+              <input type="text" name="bairro_aluno" placeholder="Bairro" />
+              <input type="text" name="cidade_aluno" placeholder="Cidade" />
+              <input type="text" name="numero_aluno" placeholder="Número" />
+              <input type="text" name="cep_aluno" placeholder="CEP" />
+              <input
+                type="text"
+                name="complemento_aluno"
+                placeholder="Complemento"
+              />
+              <input type="text" name="estado_aluno" placeholder="Estado" />
+              <input type="tel" name="telefone_aluno" placeholder="Telefone" />
+              <input
+                type="tel"
+                name="celular_aluno"
+                placeholder="Celular*"
+                required
+              />
+              <input
+                type="email"
+                name="email_aluno"
+                placeholder="E-mail*"
+                required
+              />
+              <select name="cor_aluno">
+                <option value="" disabled selected>Cor da Pele*</option>
+                <option value="Branca">Branca</option>
+                <option value="Preta">Preta</option>
+                <option value="Parda">Parda</option>
+                <option value="Amarela">Amarela</option>
+                <option value="Indígena">Indígena</option>
+              </select>
+            </div>
+
+            <h3 class="form-subtitle">Dados do Pai</h3>
+            <div class="form-group">
+              <input
+                type="text"
+                name="nome_pai"
+                placeholder="Nome Completo*"
+                required
+              />
+              <input
+                type="date"
+                name="data_nascimento_pai"
+                placeholder="Data de Nascimento*"
+              />
+              <input
+                type="text"
+                name="naturalidade_pai"
+                placeholder="Naturalidade"
+              />
+              <input type="text" name="instrucao_pai" placeholder="Instrução" />
+              <input type="text" name="profissao_pai" placeholder="Profissão" />
+              <input
+                type="tel"
+                name="celular_pai"
+                placeholder="Celular*"
+                required
+              />
+              <input
+                type="email"
+                name="email_pai"
+                placeholder="E-mail*"
+                required
+              />
+              <input type="text" name="cpf_pai" placeholder="CPF*" />
+              <label class="checkbox-label">
+                <input type="checkbox" name="responsavel_financeiro_pai" />
+                <span class="checkbox-custom"></span>
+                Responsável Financeiro
+              </label>
+            </div>
+
+            <h3 class="form-subtitle">Dados da Mãe</h3>
+            <div class="form-group">
+              <input
+                type="text"
+                name="nome_mae"
+                placeholder="Nome Completo*"
+                required
+              />
+              <input
+                type="date"
+                name="data_nascimento_mae"
+                placeholder="Data de Nascimento*"
+              />
+              <input
+                type="text"
+                name="naturalidade_mae"
+                placeholder="Naturalidade"
+              />
+              <input type="text" name="instrucao_mae" placeholder="Instrução" />
+              <input type="text" name="profissao_mae" placeholder="Profissão" />
+              <input
+                type="tel"
+                name="celular_mae"
+                placeholder="Celular*"
+                required
+              />
+              <input
+                type="email"
+                name="email_mae"
+                placeholder="E-mail*"
+                required
+              />
+              <input type="text" name="cpf_mae" placeholder="CPF*" />
+              <label class="checkbox-label">
+                <input type="checkbox" name="responsavel_financeiro_mae" />
+                <span class="checkbox-custom"></span>
+                Responsável Financeiro
+              </label>
+            </div>
+
+            <h3 class="form-subtitle">Dados do Curso</h3>
+            <div class="form-group">
+              <input
+                type="text"
+                name="nome_curso"
+                placeholder="Nome do curso escolhido*"
+                required
+              />
+              <input
+                type="date"
+                name="data_ingresso"
+                placeholder="Data de ingresso*"
+                required
+              />
+              <input
+                type="text"
+                name="valor_curso"
+                placeholder="Valor*"
+                required
+              />
+              <input
+                type="text"
+                name="forma_pagamento"
+                placeholder="Forma de pagamento (qtde de parcelas)*"
+                required
+              />
+            </div>
+
+            <button type="submit" class="btn-submit">Enviar Inscrição</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
